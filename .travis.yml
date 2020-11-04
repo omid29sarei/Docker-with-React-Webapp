@@ -4,9 +4,9 @@ services:
     - docker
 
 before_install:
-    - docker build -t omid29/Docker-with-React-Webapp -f Dockerfile.dev .
+    - docker build -t omid29/docker-react -f Dockerfile.dev .
 
 script: 
-    - docker run -e CI=true omid29/Docker-with-React-Webapp npm run test
+    - docker run -e CI=true omid29/docker-react npm run test
 
 
