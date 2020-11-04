@@ -7,6 +7,6 @@ before_install:
     - docker build -t omid29/Docker-with-React-Webapp -f Dockerfile.dev .
 
 script: 
-    - docker run  omid29/Docker-with-React-Webapp npm run test
+    - docker run -e CI=true omid29/Docker-with-React-Webapp npm run test
 
 
