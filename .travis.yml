@@ -1,9 +1,8 @@
-sudo: required
 services: 
     - docker
 
 before_install:
     - docker build -t omid29/Docker-with-React-Webapp -f Dockerfile.dev .
 
-scripts: 
+script: 
     - docker run  omid29/Docker-with-React-Webapp npm run test
