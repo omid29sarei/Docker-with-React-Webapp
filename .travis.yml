@@ -1,3 +1,6 @@
+language: generic
+os: osx
+
 services: 
     - docker
 
@@ -6,3 +9,5 @@ before_install:
 
 script: 
     - docker run  omid29/Docker-with-React-Webapp npm run test
+
+
